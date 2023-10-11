@@ -1,10 +1,9 @@
 
-//Para ambiente de desenvolvimento
 const http = require('http');
 const socketio = require('socket.io');
 const {logger} = require('./util');
 const Routes = require('./routes');
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3001;
 
 const handler = function (req, res) {
     const defaultRoute = async (req,res) => res.end('Hello World');
